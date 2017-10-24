@@ -8,18 +8,18 @@ $str = task1($arr1, true);
 echo $str;
 
 echo '<h1>Задание №2</h1>';
-$arr2 = array(2, 2, 3, 4, 5);
-$str2 = '**';
-task2($arr2, $str2);
+$arr2 = array(2, 2, 0, 4, 5);
+$str2 = '/';
+echo task2($arr2, $str2);
 
 echo '<h1>Задание №3</h1>';
-task3('+', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+echo task3('+', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
 echo '<h1>Задание №4</h1>';
 echo task4(8, 8);
 
 echo '<h1>Задание №5</h1>';
-echo task5("ava Ava          AvA");
+echo task5("яфя    яфя яфя");
 
 echo '<h1>Задание №6</h1>';
 task6();
