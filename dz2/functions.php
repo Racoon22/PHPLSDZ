@@ -100,7 +100,7 @@ function task2($arr, $str)
             $error = 'Этот калькулятор глуповат, чтобы вычислять интегралы, дифуры 
                           и расчитывать траекторию посадки ракет на Юпитер';
     }
-    echo isset($error) ? $error : $result;
+    return isset($error) ? $error : $result;
 }
 
 function task3()
@@ -203,7 +203,6 @@ function task4()
         return 'передано не 2 параметра';
     }
     $arg = func_get_args();
-
     if (!is_int($arg[0]) || !is_int($arg[1])) {
         return 'переданы не целые числа';
     }
@@ -211,7 +210,6 @@ function task4()
     for ($i = 1; $i <= $arg[0]; $i++) {
         echo '<tr>';
         for ($j = 1; $j <= $arg[1]; $j++) {
-
             echo '<td>' . $j * $i . '</td>';
         }
         echo '</tr>';
