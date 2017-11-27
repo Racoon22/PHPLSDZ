@@ -4,8 +4,17 @@ namespace Base;
 
 trait Transmission
 {
-    public function moveBack()
+    public function transmissionON($direction, $speed)
     {
-        $this->direction = 'Назад';
+        if ($direction === 'вперед') {
+            $this->transmissionForward($speed);
+        } else {
+            $this->transmissionBack();
+        }
+    }
+
+    public function transmissionBack()
+    {
+        echo 'Включена передача назад<br>';
     }
 }

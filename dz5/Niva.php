@@ -1,17 +1,18 @@
 <?php
+
 namespace Base\Niva;
 
 use Base\Car;
-use Base\Transmission;
+use Base\TransmissionAuto;
+use Base\TransmissionManual;
 
 class Niva extends Car
 {
-    use Transmission;
-    protected $transfer;
-
     public function __construct()
     {
-        $this->transfer = 'auto';
+        parent::__construct();
+        $this->transmission = new TransmissionManual();
+
     }
 
 
